@@ -1,0 +1,67 @@
+---
+import Layout from "../layouts/Layout.astro"
+import Badge from "../components/Badge.astro"
+import SectionContainer from "../components/SectionContainer.astro"
+import LinkedInIcon from "../components/icons/LinkedIn.astro"
+import SocialPill from "../components/SocialPill.astro"
+import GitHubIcon from "../components/icons/GitHub.astro"
+import MailIcon from "../components/icons/Mail.astro"
+import Experience from "../components/Experience.astro"
+import Briefcase from "../components/icons/Briefcase.astro"
+import CodeIcon from "../components/icons/Code.astro"
+// import Projects from "../components/Projects.astro"
+---
+
+<Layout 
+	title="Porfolio de JrFullStack - Desarrollador y Programador Web."
+	description="No dudes en contrartar mis servicios, apasionado por abordar desafíos creativos y entregando soluciones de alta calidad"
+>
+	<main>
+		<SectionContainer class="py-44 pb-32">
+
+			<img 
+				class="rounded-full size-16 object-cover mb-4" 
+				src="/assets/imagen/jrfullstack-photo.webp" 
+				alt="JrFullStack Photo"
+			>
+
+			<h1 class="text-white text-5xl font-bold flex flex-row gap-x-4 pb-10">
+				Hey, soy JrFullStack <a href="https://www.linkedin.com/in/jimmy-reyes-c/" target="_blank" class="flex justify-center items-center"><Badge>Disponible para trabajar</Badge></a> 
+
+			</h1>
+
+			<h2 class="text-2xl text-wrap">
+				Soy apasionado por la creación de <span class="text-violet-400/90">soluciones digitales innovadoras y eficientes.</span> Mi reciente <span class="text-red-200/90">certificación como Full Stack</span> es el testimonio de mi compromiso constante con la mejora y la <span class="text-yellow-200/90">adaptación a las últimas tecnologías.</span>
+			</h2>
+
+			<nav class="flex gap-4 mt-8 flex-wrap">
+        <SocialPill href="https://linkedin.com/in/jimmy-reyes-c">
+          <LinkedInIcon class="size-4 md:size-6" />
+           LinkedIn
+        </SocialPill>
+        <SocialPill href="https://github.com/jrfullstack">
+          <GitHubIcon class="size-4 md:size-6" />
+           GitHub
+        </SocialPill>
+        <SocialPill href="mailto:jrfullstack@gmail.com">
+          <MailIcon class="size-4 md:size-6" />
+           jrfullstack@gmail.com
+        </SocialPill>
+      </nav>
+			</nav>
+
+		</SectionContainer>
+
+		<SectionContainer id="experiencia">
+      <h2
+        class="text-3xl font-semibold mb-6 flex gap-x-3 items-center text-white/80"
+      >
+        <Briefcase class="size-7" />
+         Experiencia laboral
+      </h2>
+      <Experience />
+    </SectionContainer>
+
+
+		</main>
+	</Layout>
