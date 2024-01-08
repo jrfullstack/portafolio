@@ -1,6 +1,7 @@
 ---
+import MaterialUI from "./icons/MaterialUI.astro";
 import NextJS from "./icons/NextJS.astro";
-import Tailwind from "./icons/Tailwind.astro";
+// import Tailwind from "./icons/Tailwind.astro";
 
 const TAGS = {
   NEXT: {
@@ -8,21 +9,21 @@ const TAGS = {
     class: "bg-black text-white",
     icon: NextJS,
   },
-  TAILWIND: {
+  MATERIALUI: {
     name: "Tailwind CSS",
     class: "bg-[#003159] text-white",
-    icon: Tailwind,
+    icon: MaterialUI,
   },
 };
 const PROJECTS = [
   {
-    title: "SVGL - A beautiful library with SVG logos",
+    title: "Tienda Online - Clone de la tienda de Tesla",
     description:
-      "Created from scratch with Next.js and Tailwind CSS. It's a library with SVG logos from the most popular brands. Optimized for SEO and performance.",
-    link: "https://svgl.vercel.app/",
-    github: "https://github.com/pheralb/svgl",
-    image: "/projects/svgl.webp",
-    tags: [TAGS.NEXT, TAGS.TAILWIND],
+      "He desarrollado un clone de la tienda de Tesla con didacticos, cuenta con funciones de carrito de compras, pago con paypal, panel administrativo, entre otras",
+    link: "https://nexjs-tienda-online-app.vercel.app/",
+    github: "https://github.com/jrfullstack/nexjs-tienda-online-app",
+    image: "/projects/tesloshop.webp",
+    tags: [TAGS.NEXT, TAGS.MATERIALUI],
   },
 ];
 ---
@@ -51,6 +52,7 @@ const PROJECTS = [
         src={image}
         alt={`Captura de pantalla del proyecto ${image}`}
       />
-    </article>
+    </article>    
   ))
 }
+<!-- Colocar los enlaces -->
