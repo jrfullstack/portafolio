@@ -9,14 +9,14 @@ import MailIcon from "../components/icons/Mail.astro"
 import Experience from "../components/Experience.astro"
 import Briefcase from "../components/icons/Briefcase.astro"
 import CodeIcon from "../components/icons/Code.astro"
-// import Projects from "../components/Projects.astro"
+import Projects from "../components/Projects.astro"
 ---
 
 <Layout 
 	title="Porfolio de JrFullStack - Desarrollador y Programador Web."
 	description="No dudes en contrartar mis servicios, apasionado por abordar desafíos creativos y entregando soluciones de alta calidad"
 >
-	<main>
+	<main class="px-4">
 		<SectionContainer class="py-44 pb-32">
 
 			<img 
@@ -25,13 +25,13 @@ import CodeIcon from "../components/icons/Code.astro"
 				alt="JrFullStack Photo"
 			>
 
-			<h1 class="text-white text-5xl font-bold flex flex-row gap-x-4 pb-10">
+			<h1 class="text-gray-900 dark:text-white text-3xl md:text-4xl lg:text-5xl font-bold flex flex-row gap-x-4 pb-6 lg:pb-10">
 				Hey, soy JrFullStack <a href="https://www.linkedin.com/in/jimmy-reyes-c/" target="_blank" class="flex justify-center items-center"><Badge>Disponible para trabajar</Badge></a> 
 
 			</h1>
 
-			<h2 class="text-2xl text-wrap">
-				Soy apasionado por la creación de <span class="text-violet-400/90">soluciones digitales innovadoras y eficientes.</span> Mi reciente <span class="text-red-200/90">certificación como Full Stack</span> es el testimonio de mi compromiso constante con la mejora y la <span class="text-yellow-200/90">adaptación a las últimas tecnologías.</span>
+			<h2 class="text-xl lg:text-2xl text-balance max-w-[700px] text-black dark:text-white">
+				Soy apasionado por la creación de <span class="text-violet-800/90 dark:text-violet-400/90">soluciones digitales innovadoras y eficientes.</span> Mi reciente <span class="ext-red-800 dark:text-red-200/90">certificación como Full Stack</span> es el testimonio de mi compromiso constante con la mejora y la <span class="text-yellow-800 dark:text-yellow-200">adaptación a las últimas tecnologías.</span>
 			</h2>
 
 			<nav class="flex gap-4 mt-8 flex-wrap">
@@ -54,12 +54,22 @@ import CodeIcon from "../components/icons/Code.astro"
 
 		<SectionContainer id="experiencia">
       <h2
-        class="text-3xl font-semibold mb-6 flex gap-x-3 items-center text-white/80"
+        class="text-3xl font-semibold mb-6 flex gap-x-3 items-center text-black/80 dark:text-white/80"
       >
         <Briefcase class="size-7" />
          Experiencia laboral
       </h2>
       <Experience />
+    </SectionContainer>
+
+		<SectionContainer id="proyectos">
+      <h2
+        class="text-3xl font-semibold mb-6 flex gap-x-3 items-center text-black/80 dark:text-white/80"
+      >
+        <CodeIcon class="size-7" />
+         Proyectos
+      </h2>
+      <Projects />
     </SectionContainer>
 
 
